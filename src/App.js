@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 
 function App() {
   const [array, setArray] = React.useState([
@@ -82,7 +81,14 @@ function App() {
   window.onkeyup = (key) => keyPress(key);
 
   return (
-    <div className="App-header" style={{ padding: "50px 200px" }}>
+    <div
+      className="App-header"
+      style={{
+        padding: "50px 200px",
+        display: "flex",
+        justifyContent: "space-between",
+      }}
+    >
       {array.map((item, index) => (
         <div
           style={{
